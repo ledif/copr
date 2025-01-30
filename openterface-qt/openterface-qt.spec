@@ -1,13 +1,13 @@
 %global srcname Openterface_QT
 
 Name:           openterface-qt
-Version:        0.0.4
+Version:        0.0.6
 Release:        %autorelease
 Summary:        Openterface Mini-KVM host application
 
 License:        AGPL-3.0-only
 URL:            https://github.com/TechxArtisanStudio/Openterface_QT
-Source:         %{url}/archive/%{version}/%{srcname}-%{version}.tar.gz
+Source:         %{url}/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires:  gcc-c++
 BuildRequires:  make
