@@ -31,11 +31,14 @@ This is the host application to control an Openterface Mini-KVM.
 %install
 %make_install
 install -Dpm0755 -t %{buildroot}%{_bindir} build/install/openterfaceQT
+mkdir -p %{buildroot}%{_sysconfdir}/udev/rules.d
+echo 'KERNEL== "hidraw*", SUBSYSTEM=="hidraw", MODE="0666"' > %{buildroot}%{_sysconfdir}/udev/rules.d/51-openterface.rules
 
 %files
 %license LICENSE
 %doc README.md
 %{_bindir}/openterfaceQT
+%{_sysconfdir}/udev/rules.d/51-openterface.rules
 
 %changelog
 %autochangelog
