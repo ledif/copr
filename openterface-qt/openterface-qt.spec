@@ -16,6 +16,7 @@ BuildRequires:  qt6-qtbase-devel
 BuildRequires:  qt6-qtmultimedia-devel
 BuildRequires:  qt6-qtserialport-devel
 BuildRequires:  qt6-qtsvg-devel
+BuildRequires:  libusb1-devel
 
 %description
 This is the host application to control an Openterface Mini-KVM.
